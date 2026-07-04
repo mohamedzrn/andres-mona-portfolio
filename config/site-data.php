@@ -102,7 +102,25 @@ $galleryItems = [
 // Example once populated: $multimediaProjects['Videos'] = [['thumb' => '...', 'title' => '...']];
 $multimediaProjects = [];
 
-// Published Works & Comms Materials: also empty in Drive as of the last sync.
+// Published Works & Comms Materials.
 // Keyed by section title matching published-works.php's $publishedSections;
 // each entry is ['title' => '...', 'url' => '...', 'date' => '...' (optional)].
-$publishedWorks = [];
+$publishedWorks = [
+    'Articles and Published Works' => [
+        [
+            'title' => 'Western PhD Candidate Studies Impact of Smartphone Use in Youth',
+            'url' => 'https://news.westernu.ca/2024/11/sarah-alakshar-digital-health/',
+            'date' => 'November 2024',
+        ],
+        [
+            'title' => 'Vanier Scholar Develops Innovations for Use of AI in Cancer Treatment Planning',
+            'url' => 'https://www.schulich.uwo.ca/about/news/2024/september/vanier_scholar_develops_innovations_for_use_of_ai_in_cancer_treatment_planning.html',
+            'date' => 'September 2024',
+        ],
+        [
+            'title' => 'Careers Day Article: Army Career from Co-op Student to Instructor',
+            'url' => '/assets/files/careers-day-article-mona.pdf',
+            'date' => 'November 2022',
+        ],
+    ],
+];
