@@ -218,6 +218,9 @@ section { padding: 4.5rem 0; }
 }
 .doc-item:hover .doc-item-icon { border-color: var(--green); }
 
+.video-item { grid-column: 1 / -1; aspect-ratio: 16/9; cursor: default; }
+.video-item video { width: 100%; height: 100%; background: var(--black); }
+
 .lightbox {
     position: fixed; inset: 0; background: rgba(6, 7, 7, 0.95); z-index: 300;
     display: none; align-items: center; justify-content: center; padding: 2rem;

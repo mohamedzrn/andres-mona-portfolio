@@ -28,6 +28,11 @@ $multimediaSections = [
                         <span class="doc-item-icon">PDF</span>
                         <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
                     </a>
+                    <?php elseif (($project['type'] ?? 'image') === 'video'): ?>
+                    <div class="gallery-item video-item">
+                        <video controls preload="metadata" src="/<?= htmlspecialchars($project['src']) ?>"></video>
+                        <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
+                    </div>
                     <?php else: ?>
                     <div class="gallery-item">
                         <img src="/<?= htmlspecialchars($project['thumb']) ?>" alt="<?= htmlspecialchars($project['title']) ?>">
