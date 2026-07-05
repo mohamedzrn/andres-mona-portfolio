@@ -195,10 +195,18 @@ section { padding: 4.5rem 0; }
     display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem;
 }
 .gallery-item {
-    position: relative; overflow: hidden; aspect-ratio: 4/3; cursor: pointer;
+    position: relative; overflow: hidden; cursor: pointer;
     border: 1px solid var(--grey-700); background: var(--grey-900);
 }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+/* Intrinsic-ratio box via padding-top instead of the `aspect-ratio` property:
+   some WebKit/Safari versions fail to size grid rows correctly against
+   aspect-ratio on first paint (only self-correcting after any layout-forcing
+   DOM mutation, e.g. a filter click) — this padding trick has no such gap. */
+.gallery-item::before { content: ''; display: block; padding-top: 75%; }
+.gallery-item img, .gallery-item video {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.gallery-item img { transition: transform 400ms ease; }
 .gallery-item:hover img { transform: scale(1.06); }
 .gallery-item .cat-tag {
     position: absolute; bottom: 0; left: 0; right: 0;
@@ -208,18 +216,17 @@ section { padding: 4.5rem 0; }
     padding: 1.5rem 0.8rem 0.6rem; font-weight: 500;
 }
 
-.doc-item {
-    display: flex; align-items: center; justify-content: center;
-    text-decoration: none; color: var(--green-bright);
-}
+.doc-item { text-decoration: none; color: var(--green-bright); }
 .doc-item .doc-item-icon {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
     font-family: var(--font-mono); font-size: 1.1rem; font-weight: 600;
     letter-spacing: 0.05em; border: 1px solid var(--grey-700); padding: 0.6em 1em;
 }
 .doc-item:hover .doc-item-icon { border-color: var(--green); }
 
-.video-item { grid-column: 1 / -1; aspect-ratio: 16/9; cursor: default; }
-.video-item video { width: 100%; height: 100%; background: var(--black); }
+.video-item { grid-column: 1 / -1; cursor: default; }
+.video-item::before { padding-top: 56.25%; }
+.video-item video { background: var(--black); }
 
 .lightbox {
     position: fixed; inset: 0; background: rgba(6, 7, 7, 0.95); z-index: 300;
