@@ -15,12 +15,12 @@ include __DIR__ . '/includes/header.php';
             <a class="btn" href="/assets/files/cover-letter-community-engagement-outreach-coordinator.pdf" download>Download Cover Letter Sample (PDF)</a>
         </div>
 
-        <div class="fade-in">
+        <div class="fade-in stack-block">
             <h3>Resume</h3>
             <embed class="resume-embed" src="/assets/files/andres-mona-resume.pdf" type="application/pdf">
         </div>
 
-        <div class="fade-in" style="margin-top: 3rem;">
+        <div class="fade-in">
             <h3>Cover Letter Sample</h3>
             <embed class="resume-embed" src="/assets/files/cover-letter-community-engagement-outreach-coordinator.pdf" type="application/pdf">
         </div>

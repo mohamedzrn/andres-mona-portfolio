@@ -30,11 +30,10 @@ function initScrollFade() {
 }
 
 function initGallery() {
-    const grid = document.querySelector('.gallery-grid');
-    if (!grid) return;
+    const items = Array.from(document.querySelectorAll('.gallery-item[data-full]'));
+    if (!items.length) return;
 
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const items = Array.from(grid.querySelectorAll('.gallery-item'));
 
     filterBtns.forEach((btn) => {
         btn.addEventListener('click', () => {

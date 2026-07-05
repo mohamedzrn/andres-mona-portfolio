@@ -34,7 +34,7 @@ $multimediaSections = [
                         <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
                     </div>
                     <?php else: ?>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-full="/<?= htmlspecialchars($project['thumb']) ?>" data-caption="<?= htmlspecialchars($project['title']) ?>">
                         <img src="/<?= htmlspecialchars($project['thumb']) ?>" alt="<?= htmlspecialchars($project['title']) ?>">
                         <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
                     </div>
@@ -51,6 +51,8 @@ $multimediaSections = [
         <?php endforeach; ?>
     </div>
 </section>
+
+<?php include __DIR__ . '/includes/lightbox.php'; ?>
 
 <?php
 $ctaHeading = 'Have A Project In Mind';
