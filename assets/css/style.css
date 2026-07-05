@@ -230,7 +230,7 @@ section { padding: 4.5rem 0; }
 .lightbox-inner img { max-width: 90vw; max-height: 70vh; object-fit: contain; margin: 0 auto; border: 1px solid var(--grey-700); }
 .lightbox-caption { color: var(--grey-100); text-align: center; margin-top: 1rem; font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500; }
 .lightbox-close, .lightbox-nav {
-    position: absolute; background: none; border: 1px solid var(--grey-700); color: var(--white);
+    position: absolute; z-index: 10; background: none; border: 1px solid var(--grey-700); color: var(--white);
     cursor: pointer; padding: 0.6em 0.9em; font-size: 1rem;
 }
 .lightbox-close { top: 1.5rem; right: 1.5rem; }
