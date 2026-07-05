@@ -97,12 +97,16 @@ $galleryItems = [
 ];
 
 // Multimedia Projects, keyed by section title matching multimedia.php's $multimediaSections.
-// Each entry is either an image (['thumb' => 'assets/img/...', 'title' => '...']) or a
-// document (['type' => 'pdf', 'url' => 'assets/files/...', 'title' => '...']).
+// Each entry is an image (['thumb' => 'assets/img/...', 'title' => '...']), a document
+// (['type' => 'pdf', 'url' => 'assets/files/...', 'title' => '...']), or a video
+// (['type' => 'video', 'src' => 'assets/video/...', 'title' => '...']). Videos are tracked
+// via Git LFS (see .gitattributes) since they're well over GitHub's 100MB plain-push limit.
 $multimediaProjects = [
-    // Videos section still empty: the 2 source videos in Drive are 73MB/203MB and haven't
-    // been pulled locally yet (Drive download tooling caps out at 10MB per file).
-    'Videos' => [],
+    'Videos' => [
+        ['type' => 'video', 'src' => 'assets/video/dtn-2023-01-04.mp4', 'title' => 'DTN - January 2023'],
+        // A second clip ("DTN - 17 May 2023 V4.mp4", ~73MB) is still in Drive only —
+        // not yet retrieved locally.
+    ],
     'Boys and Girls Club London (BGC)' => [
         ['thumb' => 'assets/img/multimedia/bgc-open-house-poster.jpg', 'title' => 'BGC London Open House Poster'],
         ['thumb' => 'assets/img/multimedia/bgc-flyer.png', 'title' => 'BGC London Open House Flyer'],
