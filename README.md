@@ -41,7 +41,15 @@ alter photos.
 
 ## Known gaps
 
-- Multimedia Projects and Published Works & Comms Materials currently render a "Coming Soon"
-  state — their Drive source folders are empty pending content from Andres.
+- Multimedia Projects still renders a "Coming Soon" state in the site, but its Drive source
+  folders are no longer empty — Andres has since added real content (2 videos in `Videos`;
+  a media advisory + 2 flyers in `Boys and Girls Club London (BGC)`; a full magazine draft,
+  cover pages, AO maps, infographics, and brand guide in `31 Canadian Brigade Group - Magazine
+  Sample`, credited to him as author/editor/translator). None of this has been pulled into
+  `config/site-data.php`/`multimedia.php` yet.
+- Published Works: the Articles subsection is populated. Comms Materials is still intentionally
+  empty — the files there list other officers as media contact and one is marked "adapted for
+  training purposes," so it was held pending confirmation from Andres rather than published as
+  his own work.
 - `contact-handler.php` uses PHP's `mail()`, which needs a working MTA on the deploy target.
   Verify it actually sends before launch, or swap in SMTP/PHPMailer.
