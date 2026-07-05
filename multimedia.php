@@ -23,10 +23,17 @@ $multimediaSections = [
             <?php if (!empty($multimediaProjects[$title])): ?>
                 <div class="gallery-grid">
                     <?php foreach ($multimediaProjects[$title] as $project): ?>
+                    <?php if (($project['type'] ?? 'image') === 'pdf'): ?>
+                    <a class="gallery-item doc-item" href="/<?= htmlspecialchars($project['url']) ?>" target="_blank" rel="noopener">
+                        <span class="doc-item-icon">PDF</span>
+                        <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
+                    </a>
+                    <?php else: ?>
                     <div class="gallery-item">
                         <img src="/<?= htmlspecialchars($project['thumb']) ?>" alt="<?= htmlspecialchars($project['title']) ?>">
                         <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
                     </div>
+                    <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             <?php else: ?>
