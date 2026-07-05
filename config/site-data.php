@@ -96,11 +96,27 @@ $galleryItems = [
     ['src' => 'assets/img/gallery/campus-brescia.jpg', 'category' => 'Campus & Education', 'caption' => ''],
 ];
 
-// Multimedia Projects: Andres's Drive subfolders (Videos / BGC / 31 CBG Magazine)
-// are currently empty. Keyed by section title matching multimedia.php's
-// $multimediaSections; each entry is ['thumb' => 'assets/img/...', 'title' => '...'].
-// Example once populated: $multimediaProjects['Videos'] = [['thumb' => '...', 'title' => '...']];
-$multimediaProjects = [];
+// Multimedia Projects, keyed by section title matching multimedia.php's $multimediaSections.
+// Each entry is either an image (['thumb' => 'assets/img/...', 'title' => '...']) or a
+// document (['type' => 'pdf', 'url' => 'assets/files/...', 'title' => '...']).
+$multimediaProjects = [
+    // Videos section still empty: the 2 source videos in Drive are 73MB/203MB and haven't
+    // been pulled locally yet (Drive download tooling caps out at 10MB per file).
+    'Videos' => [],
+    'Boys and Girls Club London (BGC)' => [
+        ['thumb' => 'assets/img/multimedia/bgc-open-house-poster.jpg', 'title' => 'BGC London Open House Poster'],
+        ['thumb' => 'assets/img/multimedia/bgc-flyer.png', 'title' => 'BGC London Open House Flyer'],
+    ],
+    '31 Canadian Brigade Group - Magazine Sample' => [
+        ['type' => 'pdf', 'url' => 'assets/files/31-cbg-cover-pages.pdf', 'title' => '31 CBG Cover Pages'],
+        ['type' => 'pdf', 'url' => 'assets/files/31-cbg-cover-pages-2.pdf', 'title' => '31 CBG Cover Pages (Alt)'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-brand-guide.png', 'title' => '31 CBG Brand Guide'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-ao-map.jpg', 'title' => 'Area of Operations Map'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-infographic-02.jpg', 'title' => 'Army Infographic 02'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-infographic-05.jpg', 'title' => 'Army Infographic 05'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-infographic-06.jpg', 'title' => 'Army Infographic 06'],
+    ],
+];
 
 // Published Works & Comms Materials.
 // Keyed by section title matching published-works.php's $publishedSections;
