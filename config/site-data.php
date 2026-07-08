@@ -119,6 +119,10 @@ $multimediaProjects = [
         ['thumb' => 'assets/img/multimedia/31-cbg-infographic-02.jpg', 'title' => 'Army Infographic 02'],
         ['thumb' => 'assets/img/multimedia/31-cbg-infographic-05.jpg', 'title' => 'Army Infographic 05'],
         ['thumb' => 'assets/img/multimedia/31-cbg-infographic-06.jpg', 'title' => 'Army Infographic 06'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-example.png', 'title' => '31 CBG Facebook Post: Job Fair'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-2.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-4.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead Deployment'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-5.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead Deployment (2)'],
     ],
 ];
 
@@ -141,6 +145,65 @@ $publishedWorks = [
             'title' => 'Careers Day Article: Army Career from Co-op Student to Instructor',
             'url' => '/assets/files/careers-day-article-mona.pdf',
             'date' => 'November 2022',
+        ],
+        [
+            'title' => 'Unsilencing the South: The Prophecy of the Two Birds (Academy of Management Annals)',
+            'url' => '/assets/files/unsilencing-the-south-published-ama.pdf',
+        ],
+        [
+            'title' => 'SDRP Report: Settler & Indigenous Comms Two Years After Kamloops',
+            'url' => '/assets/files/sdrp-report-kamloops-comms.pdf',
+            'date' => 'April 2024',
+        ],
+        [
+            'title' => 'CM/Storytelling Rationale Paper: 31 Canadian Brigade Group',
+            'url' => '/assets/files/cm-storytelling-rationale-31cbg.pdf',
+            'date' => 'March 2024',
+        ],
+        [
+            'title' => 'Capstone Backgrounder: 31 CBG Magazine',
+            'url' => '/assets/files/capstone-backgrounder-31cbg-magazine.pdf',
+        ],
+    ],
+    'Comms Materials' => [
+        [
+            'title' => 'Strategic Communications Plan: City of London Sports & Rec',
+            'url' => '/assets/files/communications-plan-london-sports-rec.pdf',
+        ],
+        [
+            'title' => 'Media Advisory: BGC London Next Level Sports Showcase',
+            'url' => '/assets/files/draft-media-advisory-nls.pdf',
+            'date' => 'August 2023',
+        ],
+        [
+            'title' => 'News Release: 31 CBG to Participate in Exercise Arrowhead Guardian',
+            'url' => '/assets/files/news-release-31cbg-arrowhead-guardian-23.pdf',
+            'date' => 'June 2023',
+        ],
+        [
+            'title' => 'Media Advisory: 4 RCR Change of Command Parade',
+            'url' => '/assets/files/media-advisory-army-parade-2022.pdf',
+            'date' => 'May 2022',
+        ],
+        [
+            'title' => 'Avis Aux Médias : Parade De Passation De Commandement Du 4 RCR',
+            'url' => '/assets/files/media-advisory-army-parade-2022-fr.pdf',
+            'date' => 'Mai 2022',
+        ],
+        [
+            'title' => 'Media Advisory: CFB Petawawa Change of Command Parade',
+            'url' => '/assets/files/media-advisory-petawawa-2018.pdf',
+            'date' => '2018',
+        ],
+        [
+            'title' => 'Public Service Announcement: Military Convoy, Highway 3',
+            'url' => '/assets/files/psa-military-convoy-2018.pdf',
+            'date' => 'May 2018',
+        ],
+        [
+            'title' => 'Message D\'intérêt Public : Convoyage Militaire',
+            'url' => '/assets/files/convoyage-militaire-2018.pdf',
+            'date' => 'Mai 2018',
         ],
     ],
 ];
