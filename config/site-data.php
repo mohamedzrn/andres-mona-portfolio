@@ -104,8 +104,7 @@ $galleryItems = [
 $multimediaProjects = [
     'Videos' => [
         ['type' => 'video', 'src' => 'assets/video/dtn-2023-01-04.mp4', 'title' => 'DTN - January 2023'],
-        // A second clip ("DTN - 17 May 2023 V4.mp4", ~73MB) is still in Drive only —
-        // not yet retrieved locally.
+        ['type' => 'video', 'src' => 'assets/video/dtn-2023-05-17.mp4', 'title' => 'DTN - May 2023'],
     ],
     'Boys and Girls Club London (BGC)' => [
         ['thumb' => 'assets/img/multimedia/bgc-open-house-poster.jpg', 'title' => 'BGC London Open House Poster'],
