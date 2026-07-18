@@ -28,6 +28,11 @@ $site = [
         'The London Foodbank',
         'Toys for Tots',
         'Lemma Academy',
+        'London InterCommunity Health Centre',
+        'Middlesex County (Middlesex Trails)',
+        'Vanier Children\'s Services',
+        'Western Gazette',
+        'Les Editions David (Mordus des Mots)',
     ],
 ];
 
@@ -102,10 +107,13 @@ $galleryItems = [
 // (['type' => 'video', 'src' => 'assets/video/...', 'title' => '...']). Videos are tracked
 // via Git LFS (see .gitattributes) since they're well over GitHub's 100MB plain-push limit.
 $multimediaProjects = [
-    'Videos' => [
+    'Videos - Army' => [
         ['type' => 'video', 'src' => 'assets/video/dtn-2023-01-04.mp4', 'title' => 'DTN - January 2023'],
         ['type' => 'video', 'src' => 'assets/video/dtn-2023-05-17.mp4', 'title' => 'DTN - May 2023'],
     ],
+    // Renders Coming Soon until the incoming .mov files (Middlesex Trails / London
+    // Foodbank stories) are converted to mp4 and added here.
+    'Videos - Civilian & Non-Profit' => [],
     'Boys and Girls Club London (BGC)' => [
         ['thumb' => 'assets/img/multimedia/bgc-open-house-poster.jpg', 'title' => 'BGC London Open House Poster'],
         ['thumb' => 'assets/img/multimedia/bgc-flyer.png', 'title' => 'BGC London Open House Flyer'],

@@ -3,7 +3,8 @@ $pageTitle = 'Multimedia Projects';
 include __DIR__ . '/includes/header.php';
 
 $multimediaSections = [
-    'Videos' => 'Field footage and video projects.',
+    'Videos - Army' => 'Field footage and video projects produced with the Canadian Army.',
+    'Videos - Civilian & Non-Profit' => 'Video stories produced for community and non-profit organizations.',
     'Boys and Girls Club London (BGC)' => 'Multimedia work produced in support of BGC London.',
     '31 Canadian Brigade Group - Magazine Sample' => 'A magazine produced for the Canadian Army, 31 CBG.',
 ];
