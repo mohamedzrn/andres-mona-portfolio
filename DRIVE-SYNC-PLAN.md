@@ -1,5 +1,22 @@
 # Drive Sync Plan — July 2026 content update
 
+STATUS 2026-07-18 (evening): ALL SECTIONS WIRED. Downloads, renames, conversions, and
+site-data.php/page wiring complete. Notable deviations from the original plan below:
+- "community-2021" photos were actually field-exercise shots → renamed field-ex-2021-1..4,
+  categorized Field Operations. Snapchat screenshot skipped (low-res, sticker overlay).
+- dsc06448/dsc06573 are regimental mess-dinner photos → new gallery category "Regimental Events".
+- community-2020.jpg is a London Free Press clipping about the Mona family — included under
+  Community Engagement with a plain caption; CONFIRM with Andres.
+- Grey Wolf: kept v2I/v2G/v2D as grey-wolf-1/2/3.jpg (variants A/E/F/H skipped).
+- Videos: "Middlesex - Carlos' Story.mov" = duplicate of "Carlos' Story - Middlesex Trails.mov"
+  (identical frames/duration) — dropped. "mona text over.mov" = captioning exercise over
+  third-party news footage — NOT added (rights + off-brand); "Timeline 1.mov" = 8s Gazette
+  teaser — NOT added. Brigade logos (1s) + Canada logo outro (2s) stings — NOT added as tiles.
+  Originals of all skipped videos remain in assets/_incoming/videos/ (gitignored).
+- Sony RAW conversions: still optional/not done.
+- SMTP env vars: user setting them on Render with their own Gmail temporarily; swap to
+  Andres's account later.
+
 Working notes for syncing the July Drive additions into the site. Written 2026-07-18.
 Source Drive root: https://drive.google.com/drive/folders/1VFsrshnvZQoHgZOpKeTAlG6ewkBKo2Dt
 
@@ -76,16 +93,16 @@ Video files now come from a WeTransfer ("Timeline 1.mov" transfer, 9 files, expi
 `ffmpeg -c:v libx264 -c:a aac -movflags +faststart` (or `-c copy` remux if already H.264):
 
 - **Army**:
-  | AG Chinook.mov (26.1MB) | video/ag-chinook.mp4 |
-  | Arrowhead Chill 2 Vid.mov (50.1MB) | video/arrowhead-chill-2.mp4 |
-  | Brigade logos.mov (278KB) | video/brigade-logos.mp4 |
-  | Canada logo outro.mov (1.2MB) | video/canada-logo-outro.mp4 |
+  | AG Chinook.mov (26.1MB, 42s) | video/ag-chinook.mp4 |
+  | Arrowhead Chill 2 Vid.mov (50.1MB, ~1min) | video/arrowhead-chill-2.mp4 |
+  | Brigade logos.mov (278KB, 1s) | logo sting — probably skip as a tile, or ask |
+  | Canada logo outro.mov (1.2MB, 2s) | logo outro — probably skip as a tile, or ask |
 - **Civilian/Non-profit** (no longer Coming Soon once these land):
-  | Carlos' Story - Middlesex Trails.mov (1021.9MB) | video/carlos-story-middlesex-trails.mp4 |
+  | Carlos' Story - Middlesex Trails.mov (1021.9MB, duration TBD) | video/carlos-story-middlesex-trails.mp4 |
   | Middlesex - Carlos' Story.mov (1021.7MB) | view first — near-identical size to the above, likely a variant/duplicate; keep only one |
-  | London Foodbank Story - Western Gazette.mov (201.3MB) | video/london-foodbank-story.mp4 |
-  | mona text over.mov (133.1MB) | view first — unclear what it is |
-  | Timeline 1.mov (4.1MB) | view first — thumbnail shows Western Gazette watermark; possibly a short cut of the Foodbank story |
+  | London Foodbank Story - Western Gazette.mov (201.3MB, ~2min) | video/london-foodbank-story.mp4 |
+  | mona text over.mov (133.1MB, ~1min) | view first — unclear what it is |
+  | Timeline 1.mov (4.1MB, 8s) | view first — thumbnail shows Western Gazette watermark; possibly a teaser cut of the Foodbank story |
 - The 1GB files MUST be re-encoded (not remuxed) to something web-reasonable before adding —
   check resolution/bitrate, target well under 200MB each; they go through Git LFS
   (.gitattributes already tracks assets/video/*.mp4).

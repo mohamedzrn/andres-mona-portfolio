@@ -58,6 +58,7 @@ $galleryCategories = [
     '31 Canadian Brigade Group' => '31 Canadian Brigade Group',
     'Military Training' => 'Military Training',
     'Field Operations' => 'Field Operations',
+    'Regimental Events' => 'Regimental Events',
     'Community Engagement' => 'Community Engagement',
     'Campus & Education' => 'Campus & Education',
 ];
@@ -82,7 +83,19 @@ $galleryItems = [
     ['src' => 'assets/img/gallery/31-cbg-arctic-2.jpg', 'category' => '31 Canadian Brigade Group', 'caption' => ''],
     ['src' => 'assets/img/gallery/31-cbg-patch.jpg', 'category' => '31 Canadian Brigade Group', 'caption' => ''],
     ['src' => 'assets/img/gallery/31-service-change-of-command.jpg', 'category' => '31 Canadian Brigade Group', 'caption' => ''],
+    ['src' => 'assets/img/gallery/tri-armoured.jpg', 'category' => '31 Canadian Brigade Group', 'caption' => ''],
     ['src' => 'assets/img/gallery/arrowhead-guardian.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/ahg-bh-10.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/ahg-bh-11.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/ahg-bh-16.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/royal-frost-1.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/winter-ex-0170.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/winter-ex-0300.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/winter-ex-0338.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/winter-ex-0358.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/winter-ex-0370.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/iscc-1.jpg', 'category' => 'Military Training', 'caption' => ''],
+    ['src' => 'assets/img/gallery/iscc-3.jpg', 'category' => 'Military Training', 'caption' => ''],
     ['src' => 'assets/img/gallery/snowmobile.jpg', 'category' => 'Military Training', 'caption' => ''],
     ['src' => 'assets/img/gallery/meaford-sunset.jpg', 'category' => 'Military Training', 'caption' => ''],
     ['src' => 'assets/img/gallery/armoured-recce.jpg', 'category' => 'Military Training', 'caption' => ''],
@@ -90,6 +103,13 @@ $galleryItems = [
     ['src' => 'assets/img/gallery/field-ops-1.jpg', 'category' => 'Field Operations', 'caption' => ''],
     ['src' => 'assets/img/gallery/field-ops-2.jpg', 'category' => 'Field Operations', 'caption' => ''],
     ['src' => 'assets/img/gallery/field-ops-3.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/petawawa-2021.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/field-ex-2021-1.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/field-ex-2021-2.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/field-ex-2021-3.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/field-ex-2021-4.jpg', 'category' => 'Field Operations', 'caption' => ''],
+    ['src' => 'assets/img/gallery/dsc06448.jpg', 'category' => 'Regimental Events', 'caption' => ''],
+    ['src' => 'assets/img/gallery/dsc06573.jpg', 'category' => 'Regimental Events', 'caption' => ''],
     ['src' => 'assets/img/gallery/community-set-1.jpg', 'category' => 'Community Engagement', 'caption' => ''],
     ['src' => 'assets/img/gallery/community-set-2.jpg', 'category' => 'Community Engagement', 'caption' => ''],
     ['src' => 'assets/img/gallery/community-set-3.jpg', 'category' => 'Community Engagement', 'caption' => ''],
@@ -98,6 +118,7 @@ $galleryItems = [
     ['src' => 'assets/img/gallery/community-2.jpg', 'category' => 'Community Engagement', 'caption' => ''],
     ['src' => 'assets/img/gallery/community-3.jpg', 'category' => 'Community Engagement', 'caption' => ''],
     ['src' => 'assets/img/gallery/community-4.jpg', 'category' => 'Community Engagement', 'caption' => ''],
+    ['src' => 'assets/img/gallery/community-2020.jpg', 'category' => 'Community Engagement', 'caption' => 'London Free Press clipping: "Canada Means Security to Family"'],
     ['src' => 'assets/img/gallery/campus-brescia.jpg', 'category' => 'Campus & Education', 'caption' => ''],
 ];
 
@@ -110,13 +131,19 @@ $multimediaProjects = [
     'Videos - Army' => [
         ['type' => 'video', 'src' => 'assets/video/dtn-2023-01-04.mp4', 'title' => 'DTN - January 2023'],
         ['type' => 'video', 'src' => 'assets/video/dtn-2023-05-17.mp4', 'title' => 'DTN - May 2023'],
+        ['type' => 'video', 'src' => 'assets/video/ag-chinook.mp4', 'title' => 'Exercise Arrowhead Guardian: Chinook'],
+        ['type' => 'video', 'src' => 'assets/video/arrowhead-chill-2.mp4', 'title' => 'Exercise Arrowhead Chill 2'],
     ],
-    // Renders Coming Soon until the incoming .mov files (Middlesex Trails / London
-    // Foodbank stories) are converted to mp4 and added here.
-    'Videos - Civilian & Non-Profit' => [],
+    'Videos - Civilian & Non-Profit' => [
+        ['type' => 'video', 'src' => 'assets/video/carlos-story-middlesex-trails.mp4', 'title' => "Carlos' Story - Middlesex Trails"],
+        ['type' => 'video', 'src' => 'assets/video/london-foodbank-story.mp4', 'title' => 'London Foodbank Story - Western Gazette'],
+    ],
     'Boys and Girls Club London (BGC)' => [
         ['thumb' => 'assets/img/multimedia/bgc-open-house-poster.jpg', 'title' => 'BGC London Open House Poster'],
         ['thumb' => 'assets/img/multimedia/bgc-flyer.png', 'title' => 'BGC London Open House Flyer'],
+        ['thumb' => 'assets/img/multimedia/bgc-open-house-promo.png', 'title' => 'BGC London Open House Promo'],
+        ['thumb' => 'assets/img/multimedia/bgc-youth-week-schedule.jpg', 'title' => 'National Youth Week Events Schedule'],
+        ['type' => 'pdf', 'url' => 'assets/files/bgc-open-house.pdf', 'title' => 'BGC London Open House PDF'],
     ],
     '31 Canadian Brigade Group - Magazine Sample' => [
         ['type' => 'pdf', 'url' => 'assets/files/31-cbg-cover-pages.pdf', 'title' => '31 CBG Cover Pages'],
@@ -130,6 +157,40 @@ $multimediaProjects = [
         ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-2.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead'],
         ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-4.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead Deployment'],
         ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-5.png', 'title' => '31 CBG Facebook Post: Glacial Arrowhead Deployment (2)'],
+        ['type' => 'pdf', 'url' => 'assets/files/31-cbg-magazine-draft.pdf', 'title' => '31 CBG Magazine Draft'],
+        ['type' => 'pdf', 'url' => 'assets/files/31-cbg-magazine-body.pdf', 'title' => '31 CBG Magazine Body (Contents and Foreword)'],
+        ['thumb' => 'assets/img/multimedia/31-cbg-ao-map-4-3.jpg', 'title' => 'Area of Operations Map (Draft 4.3)'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-1.png', 'title' => '31 CBG Facebook Post (1)'],
+        ['thumb' => 'assets/img/multimedia/31cbg-facebook-post-3.png', 'title' => '31 CBG Facebook Post (3)'],
+        ['thumb' => 'assets/img/multimedia/31cbg-calendar-february.png', 'title' => '31 CBG Calendar: February'],
+        ['thumb' => 'assets/img/multimedia/31cbg-calendar-march.png', 'title' => '31 CBG Calendar: March'],
+        ['thumb' => 'assets/img/multimedia/31cbg-pa-recruiting.png', 'title' => 'Public Affairs Recruiting Poster'],
+        ['thumb' => 'assets/img/multimedia/grey-wolf-1.jpg', 'title' => 'Exercise Grey Wolf Recruiting Post (1)'],
+        ['thumb' => 'assets/img/multimedia/grey-wolf-2.jpg', 'title' => 'Exercise Grey Wolf Recruiting Post (2)'],
+        ['thumb' => 'assets/img/multimedia/grey-wolf-3.jpg', 'title' => 'Exercise Grey Wolf Recruiting Post (3)'],
+    ],
+    'London InterCommunity Health Centre' => [
+        ['type' => 'link', 'url' => 'https://andresmona.wordpress.com/2023/12/03/integrated-media-project/', 'title' => 'Integrated Media Project - WordPress Post'],
+        ['type' => 'pdf', 'url' => 'assets/files/storytelling-digital-age-lihc.pdf', 'title' => 'Storytelling in the Digital Age - Presentation Summary'],
+        ['thumb' => 'assets/img/multimedia/lihc-infographic.png', 'title' => 'LIHC Infographic'],
+        ['thumb' => 'assets/img/multimedia/lihc-opioid-crisis-facts.png', 'title' => '5 Facts About the Opioid Crisis'],
+        ['thumb' => 'assets/img/multimedia/lihc-imp-timeline.png', 'title' => 'Integrated Media Project Timeline'],
+        ['thumb' => 'assets/img/multimedia/lihc-social-1.png', 'title' => 'LIHC Social Media Post (1)'],
+        ['thumb' => 'assets/img/multimedia/lihc-social-2.jpg', 'title' => 'LIHC Social Media Post (2)'],
+        ['thumb' => 'assets/img/multimedia/lihc-social-3.jpg', 'title' => 'LIHC Social Media Post (3)'],
+        ['thumb' => 'assets/img/multimedia/lihc-social-4.jpg', 'title' => 'LIHC Social Media Post (4)'],
+    ],
+    'Middlesex County (Middlesex Trails)' => [
+        ['thumb' => 'assets/img/multimedia/middlesex-grassroutes-cover.webp', 'title' => '2023 Grassroutes Map Cover'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-cover.png', 'title' => 'Trails Guide 2023 Cover'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-1.jpg', 'title' => 'Trails Guide 2023 (1)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-2.jpg', 'title' => 'Trails Guide 2023 (2)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-3.jpg', 'title' => 'Trails Guide 2023 (3)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-4.jpg', 'title' => 'Trails Guide 2023 (4)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-5.jpg', 'title' => 'Trails Guide 2023 (5)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-6.jpg', 'title' => 'Trails Guide 2023 (6)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-38.png', 'title' => 'Trails Guide 2023 (38)'],
+        ['thumb' => 'assets/img/multimedia/middlesex-trails-39.png', 'title' => 'Trails Guide 2023 (39)'],
     ],
 ];
 
@@ -171,6 +232,51 @@ $publishedWorks = [
             'title' => 'Capstone Backgrounder: 31 CBG Magazine',
             'url' => '/assets/files/capstone-backgrounder-31cbg-magazine.pdf',
         ],
+        [
+            'title' => 'Article for Army Magazine: The Maple Leaf',
+            'url' => '/assets/files/maple-leaf-army-magazine-2023.pdf',
+            'date' => '2023',
+        ],
+        [
+            'title' => '3 Samples of Journalism and Communication Publications (Western Gazette)',
+            'url' => '/assets/files/journalism-samples.pdf',
+        ],
+        [
+            'title' => 'Mordus des Mots Short Story (Les Editions David)',
+            'url' => '/assets/files/mordus-des-mots-short-story.pdf',
+        ],
+        [
+            'title' => 'Mordus des Mots Short Story: Translation',
+            'url' => '/assets/files/mordus-des-mots-translation.pdf',
+        ],
+        [
+            'title' => 'Local Community Spotlight: St-Maurice Weekly',
+            'url' => '/assets/files/st-maurice-weekly-spotlight.pdf',
+        ],
+        [
+            'title' => 'Échantillon d\'écriture',
+            'url' => '/assets/files/echantillon-decriture.pdf',
+        ],
+        [
+            'title' => 'Writer\'s Commonplace Book',
+            'url' => '/assets/files/writers-commonplace-book.pdf',
+        ],
+        [
+            'title' => 'Legal Case Review: Writing Sample',
+            'url' => '/assets/files/legal-case-review-sample.pdf',
+        ],
+        [
+            'title' => 'Vanier Children\'s Services: London Free Press Insert',
+            'url' => '/assets/files/vanier-london-free-press-insert.pdf',
+        ],
+        [
+            'title' => 'Vanier Children\'s Services: Press Write-up',
+            'url' => '/assets/files/vanier-press-writeup.jpg',
+        ],
+        [
+            'title' => 'English Published Research Paper (Western University)',
+            'url' => '/assets/files/western-english-research-paper.pdf',
+        ],
     ],
     'Comms Materials' => [
         [
@@ -211,6 +317,26 @@ $publishedWorks = [
             'title' => 'Message D\'intérêt Public : Convoyage Militaire',
             'url' => '/assets/files/convoyage-militaire-2018.pdf',
             'date' => 'Mai 2018',
+        ],
+        [
+            'title' => 'Lemma Academy Communications Plan Sample',
+            'url' => '/assets/files/lemma-academy-comms-plan.pdf',
+        ],
+        [
+            'title' => 'Communications Audit: Vanier Children\'s Services (Collaboration)',
+            'url' => '/assets/files/comms-audit-vanier.pdf',
+        ],
+        [
+            'title' => 'Exercise Grey Wolf Post Bank',
+            'url' => '/assets/files/grey-wolf-post-bank.pdf',
+        ],
+        [
+            'title' => 'Canadian Military Interview Template',
+            'url' => '/assets/files/military-interview-template.pdf',
+        ],
+        [
+            'title' => 'BGC London Community Showcase Tournament Information',
+            'url' => '/assets/files/bgc-showcase-tournament-info.pdf',
         ],
     ],
 ];

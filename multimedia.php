@@ -7,6 +7,8 @@ $multimediaSections = [
     'Videos - Civilian & Non-Profit' => 'Video stories produced for community and non-profit organizations.',
     'Boys and Girls Club London (BGC)' => 'Multimedia work produced in support of BGC London.',
     '31 Canadian Brigade Group - Magazine Sample' => 'A magazine produced for the Canadian Army, 31 CBG.',
+    'London InterCommunity Health Centre' => 'Integrated Media Project produced for the London InterCommunity Health Centre (December 2023).',
+    'Middlesex County (Middlesex Trails)' => 'Trail guide and map materials produced for Middlesex County.',
 ];
 ?>
 
@@ -27,6 +29,11 @@ $multimediaSections = [
                     <?php if (($project['type'] ?? 'image') === 'pdf'): ?>
                     <a class="gallery-item doc-item" href="/<?= htmlspecialchars($project['url']) ?>" target="_blank" rel="noopener">
                         <span class="doc-item-icon">PDF</span>
+                        <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
+                    </a>
+                    <?php elseif (($project['type'] ?? 'image') === 'link'): ?>
+                    <a class="gallery-item doc-item" href="<?= htmlspecialchars($project['url']) ?>" target="_blank" rel="noopener">
+                        <span class="doc-item-icon">WEB</span>
                         <span class="cat-tag"><?= htmlspecialchars($project['title']) ?></span>
                     </a>
                     <?php elseif (($project['type'] ?? 'image') === 'video'): ?>
