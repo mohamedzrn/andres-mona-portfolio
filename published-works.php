@@ -4,14 +4,14 @@ include __DIR__ . '/includes/header.php';
 
 $publishedSections = [
     'Articles and Published Works' => 'Published articles and short stories.',
-    'Comms Materials' => 'Strategic communications plans and other publications.',
+    'Communications Materials' => 'Strategic communications plans and other publications.',
 ];
 ?>
 
 <section>
     <div class="container">
         <div class="section-head fade-in">
-            <p class="hero-eyebrow">Published Works &amp; Comms Materials</p>
+            <p class="hero-eyebrow">Published Works &amp; Communications Materials</p>
             <h1>Published Works</h1>
             <p>Articles, short stories, and strategic communications materials.</p>
         </div>

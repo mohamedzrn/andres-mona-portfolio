@@ -1,4 +1,5 @@
 storage/
 assets/_incoming/
+.claude/
 *.crdownload
 assets/wetransfer_*.zip

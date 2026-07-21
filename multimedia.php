@@ -6,7 +6,7 @@ $multimediaSections = [
     'Videos - Army' => 'Field footage and video projects produced with the Canadian Army.',
     'Videos - Civilian & Non-Profit' => 'Video stories produced for community and non-profit organizations.',
     'Boys and Girls Club London (BGC)' => 'Multimedia work produced in support of BGC London.',
-    '31 Canadian Brigade Group - Magazine Sample' => 'A magazine produced for the Canadian Army, 31 CBG.',
+    'Canadian Army: 31 Canadian Brigade Group' => 'A magazine produced for the Canadian Army, 31 CBG.',
     'London InterCommunity Health Centre' => 'Integrated Media Project produced for the London InterCommunity Health Centre (December 2023).',
     'Middlesex County (Middlesex Trails)' => 'Trail guide and map materials produced for Middlesex County.',
 ];
@@ -63,7 +63,7 @@ $multimediaSections = [
 <?php include __DIR__ . '/includes/lightbox.php'; ?>
 
 <?php
-$ctaHeading = 'Have A Project In Mind';
+$ctaHeading = 'Have A Project In Mind?';
 $ctaText = 'Get in touch to discuss multimedia and communications work.';
 include __DIR__ . '/includes/cta.php';
 include __DIR__ . '/includes/footer.php';
