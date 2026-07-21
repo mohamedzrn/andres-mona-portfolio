@@ -51,7 +51,7 @@ include __DIR__ . '/includes/header.php';
 <section class="section-alt">
     <div class="container">
         <div class="section-head fade-in">
-            <h2>Where He Works</h2>
+            <h2>Where I&rsquo;ve Worked</h2>
             <p>A career spanning military public affairs, academic research, education, and community advocacy.</p>
         </div>
         <ul class="org-grid fade-in">

@@ -145,7 +145,7 @@ $multimediaProjects = [
         ['thumb' => 'assets/img/multimedia/bgc-youth-week-schedule.jpg', 'title' => 'National Youth Week Events Schedule'],
         ['type' => 'pdf', 'url' => 'assets/files/bgc-open-house.pdf', 'title' => 'BGC London Open House PDF'],
     ],
-    '31 Canadian Brigade Group - Magazine Sample' => [
+    'Canadian Army: 31 Canadian Brigade Group' => [
         ['type' => 'pdf', 'url' => 'assets/files/31-cbg-cover-pages.pdf', 'title' => '31 CBG Cover Pages'],
         ['type' => 'pdf', 'url' => 'assets/files/31-cbg-cover-pages-2.pdf', 'title' => '31 CBG Cover Pages (Alt)'],
         ['thumb' => 'assets/img/multimedia/31-cbg-brand-guide.png', 'title' => '31 CBG Brand Guide'],
@@ -194,7 +194,7 @@ $multimediaProjects = [
     ],
 ];
 
-// Published Works & Comms Materials.
+// Published Works & Communications Materials.
 // Keyed by section title matching published-works.php's $publishedSections;
 // each entry is ['title' => '...', 'url' => '...', 'date' => '...' (optional)].
 $publishedWorks = [
@@ -278,7 +278,7 @@ $publishedWorks = [
             'url' => '/assets/files/western-english-research-paper.pdf',
         ],
     ],
-    'Comms Materials' => [
+    'Communications Materials' => [
         [
             'title' => 'Strategic Communications Plan: City of London Sports & Rec',
             'url' => '/assets/files/communications-plan-london-sports-rec.pdf',

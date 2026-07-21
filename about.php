@@ -22,7 +22,16 @@ include __DIR__ . '/includes/header.php';
 
             <p>My desire to bridge these cultural anecdotes into a deliberate craft would eventually guide me along my academic journey at Western University. There, I immersed myself in the power of language, earning a Bachelor&rsquo;s degree with a double major in English and French, followed by two Master&rsquo;s degrees: one in English Studies and Literature and the other in Communications and Journalism. Parallel to my academic journey, I joined the Canadian Army, serving as an infantry soldier and quickly rising through the ranks to become an instructor and, eventually, a Public Affairs Representative. Beyond those spaces, I have been blessed to partner with diverse non-profits both in the city of London, Ontario and the Greater Toronto area, with whom I provided strategic communications consultation and advice. Presently, I have retired from the Canadian Military and currently conduct international research with Ivey Business School at Western University as a Research Associate. There, I work alongside academic partners at the University of S&atilde;o Paulo and UNAM within the field of Indigenous Management and Organization studies.</p>
 
-            <p>I have built this portfolio as a testament to my mission that now more than ever, amid rapid advances in technology and within this landscape of uncertainty, the necessity for writers, communicators, scholars and storytellers becomes more vital than ever. &ldquo;As far as we can discern, the sole purpose of human existence is to kindle a light of meaning in the darkness of mere being.&rdquo; &mdash; Carl Jung</p>
+            <figure class="bio-photo fade-in">
+                <img src="/assets/img/bio/andres-field-army.jpg" alt="Andres Mona in the field during Canadian Army training">
+            </figure>
+
+            <p>I have built this portfolio as a testament to my mission that now more than ever, amid rapid advances in technology and within this landscape of uncertainty, the necessity for writers, communicators, scholars and storytellers becomes more vital than ever.</p>
+
+            <blockquote>
+                <p><em>&ldquo;As far as we can discern, the sole purpose of human existence is to kindle a light of meaning in the darkness of mere being.&rdquo;</em></p>
+                <p>&mdash; Carl Jung</p>
+            </blockquote>
         </div>
     </div>
 </section>
