@@ -127,7 +127,16 @@ p { margin: 0 0 1em; color: var(--grey-300); }
     aspect-ratio: 4/5; overflow: hidden; border: 1px solid var(--grey-700);
     background: var(--grey-900);
 }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+/* headshot-1.jpg is a tall 516x1067 frame, so the 4/5 box crops ~40% of its
+   height. `top` left dead wall above the head and sliced the jaw at the bottom
+   edge. 26% keeps the head centred (its midpoint sits at 46% of the frame)
+   while putting the eye-line just above centre and leaving the collar and
+   lapels in shot to anchor the base of the portrait.
+   Tied to this specific photo -- re-measure if the headshot is ever swapped. */
+.hero-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center 26%;
+}
 
 /* ---------- Signature motif: field-record corner frame ----------
    The one deliberate flourish on the site, reserved for the two places a
