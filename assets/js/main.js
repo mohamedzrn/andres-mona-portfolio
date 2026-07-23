@@ -25,7 +25,13 @@ function initScrollFade() {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
+        // A ratio threshold is unusable here: an element taller than
+        // viewport / 0.15 can never show 15% of itself at once, so it would
+        // stay at opacity 0 forever. The gallery grid stacks to ~14000px on a
+        // phone, which is exactly that case. Fire on first pixel instead, and
+        // get the "reveal on scroll" feel from the bottom margin rather than
+        // from the ratio.
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
     targets.forEach((el) => observer.observe(el));
 }
 

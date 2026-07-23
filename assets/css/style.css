@@ -276,7 +276,9 @@ section { padding: 4.5rem 0; }
 .form-group label { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--grey-300); margin-bottom: 0.4em; }
 .form-group input, .form-group textarea {
     width: 100%; background: var(--grey-900); border: 1px solid var(--grey-700); color: var(--white);
-    padding: 0.75em 0.9em; font-family: var(--font-body); font-size: 0.95rem;
+    /* Must stay at 16px: iOS Safari auto-zooms the whole page when a field
+       smaller than that takes focus, and the visitor has to pinch back out. */
+    padding: 0.75em 0.9em; font-family: var(--font-body); font-size: 1rem;
 }
 .form-group input:focus, .form-group textarea:focus { border-color: var(--green); }
 .form-group textarea { resize: vertical; min-height: 140px; }
@@ -311,13 +313,13 @@ section { padding: 4.5rem 0; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-photo { max-width: 320px; }
-    .contact-grid { grid-template-columns: 1fr; }
-}
 
-@media (max-width: 720px) {
+/* The seven nav labels plus the wordmark stop fitting on one line below
+   1024px: "Photo Gallery", "Published Works" and the brand each wrap, pushing
+   the header from 62px to 92px and leaving a cramped two-line bar. Tablets in
+   portrait (~810px) sit right in that band, so they get the drawer nav too --
+   not just phones. */
+@media (max-width: 1023px) {
     .nav-toggle { display: flex; }
     .site-nav {
         position: absolute; top: 100%; left: 0; right: 0; background: var(--charcoal);
@@ -328,6 +330,15 @@ section { padding: 4.5rem 0; }
     .site-nav ul { flex-direction: column; gap: 0; padding: 1rem 1.5rem; }
     .site-nav li { border-bottom: 1px solid var(--grey-700); }
     .site-nav a { display: block; padding: 0.9em 0; }
+}
+
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-photo { max-width: 320px; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
     .lightbox-prev, .lightbox-next { padding: 0.5em 0.7em; }
     .bracket-frame .corner { width: 14px; height: 14px; }
 }
